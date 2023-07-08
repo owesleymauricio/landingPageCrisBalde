@@ -144,8 +144,24 @@ section h3 {
     padding: 10px;
     font-size: 20px;
 }
+.link-site{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.link-feed{
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+}
+.link-feed:hover{
+    color: #6495ED;
+}
 footer{
     font-size: 30px;
+    margin-top: 10px;
 }
 
 .sliders {
@@ -156,7 +172,7 @@ footer{
     width: 400px;
     height: 600px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .slides {
@@ -329,7 +345,7 @@ footer {
     }
 
     .apresentacao-cinco p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .img-casa {
@@ -406,7 +422,7 @@ footer {
     }
 
     .apresentacao-cinco p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .img-casa {
@@ -430,15 +446,7 @@ footer {
    }
 }
 
-@media (max-width: 425px){
-    section img {
-        width: 100%;
 
-    }
-    .sliders {
-        width: 100%;
-}
-}
 @media (max-width: 1024px){
     .apresentacao {
         font-size: 24px;
@@ -504,7 +512,9 @@ footer {
         font-size: 17px;
 
     }
-
+    .apresentacao-cinco{
+        padding: 10px 10px;
+    }
     .apresentacao-cinco p {
         font-size: 20px;
     }
@@ -517,7 +527,46 @@ footer {
 @media (max-width: 635px) {
     .apresentacao {
         font-size: 12px;
+        padding: 10px 70px;
+    }
+    .apresentacao-dois {
+        padding: 10px 70px;
+    }
+
+    .apresentacao-tres {
+        padding: 10px 70px;
+    }
+
+    .apresentacao-quatro {
+        padding: 10px 70px;
+    }
+
+    .apresentacao-dois p,
+    .apresentacao-tres p,
+    .apresentacao-quatro p {
+        font-size: 12px;
+    }
+
+    .apresentacao-cinco p {
+        font-size: 13px;
         padding: 10px 0;
+    }
+    .img-casa{
+        width: 100px;
+        height: 150px;
+    }
+}
+@media (max-width: 425px){
+    section img {
+        width: 100%;
+
+    }
+    .sliders {
+        width: 100%;
+    }
+    .apresentacao {
+    font-size: 12px;
+    padding: 10px 0;
     }
     .apresentacao-dois {
         padding: 10px 0;
@@ -536,12 +585,30 @@ footer {
     .apresentacao-quatro p {
         font-size: 12px;
     }
+    .apresentacao-cinco{
+        padding: 10px 0;
+    }
 
     .apresentacao-cinco p {
         font-size: 13px;
+    
     }
     .img-casa{
         width: 100px;
         height: 150px;
+    }
+    footer{
+        font-size: 19px;
+    }
+}
+@media(max-width: 340px){
+    .apresentacao {
+        font-size: 10px;
+        padding: 10px 0;
+        }
+    .apresentacao-dois p,
+    .apresentacao-tres p,
+    .apresentacao-quatro p {
+        font-size: 10px;
     }
 }

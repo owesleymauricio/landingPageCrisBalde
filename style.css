@@ -4,19 +4,20 @@
     font-family: 'Heebo', sans-serif;
     box-sizing: border-box;
 }
-
+body{
+     max-width: 1600px;
+    margin: 0 auto; /* Centraliza o conteúdo na tela */    
+    background-color: #fff;
+}
 
 .navBar {
     display: flex;
     justify-content: space-between;
+    background-color:#FFFAFA;
 
 }
 
-body {
 
-    background-color: #DCDCDC;
-
-}
 
 h1 {
     font-size: 50px;
@@ -27,8 +28,8 @@ h1 {
     margin-top: 5px;
     margin-right: 5px;
     margin-right: 20px;
-
 }
+
 
 .navMobile {
     display: none;
@@ -44,7 +45,7 @@ h1 {
     flex-wrap: wrap;
     /* Permite que os elementos quebrem linha quando necessário */
     justify-content: space-between;
-    background-color: #6495ED;
+    background-image: radial-gradient(#ADD8E6,#00BFFF);
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -52,12 +53,13 @@ h1 {
 section img {
     width: 400px;
     border-radius: 50%;
-
+    
 }
 
 .text-section {
     margin-left: 150px;
     margin-top: 100px;
+    
 }
 
 .text-section .dinamico {
@@ -80,81 +82,43 @@ section h3 {
 .apresentacao {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 10px;
-    padding: 50px 400px;
+    padding: 50px 100px;
+    background-color:#FFFAFA;
 
 }
 
-.img-casa {
-    width: 300px;
-    height: 370px;
+.stander-casa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: radial-gradient(#ADD8E6,#00BFFF);
+    height: 500px;   
     border-radius: 5px;
 }
-
-.apresentacao-dois {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin: 10px;
-    padding: 50px 400px;
-
+.stander-casa img{  
+    width: 500px;
+    height: 440px;
+    margin: 0 70px;
+    border-radius: 5px;
 }
-
-.apresentacao-dois p {
-    padding-left: 10px;
-    font-size: 25px;
-}
-
-.apresentacao-tres {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin: 10px;
-    padding: 50px 400px;
-
-}
-
-.apresentacao-tres p {
-
-    font-size: 25px;
-}
-
-.apresentacao-quatro {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin: 10px;
-    padding: 50px 400px;
-
-}
-
-.apresentacao-quatro p {
-    padding-left: 10px;
-    font-size: 25px;
-}
-
-.apresentacao-cinco {
-    display: flex;
-    margin: 30px;
-    padding: 10px 100px;
-}
-
-.apresentacao-cinco p {
-    padding: 10px;
-    font-size: 20px;
+.top-slider{
+    font-size: 60px;
+    text-align: center;
+    margin: 20px;
 }
 .link-site{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 100px;
 }
 .link-feed{
     text-decoration: none;
     color: #000;
-    font-size: 23px;
+    font-size: 30px;
 }
 .link-feed:hover{
     color: #6495ED;
@@ -173,6 +137,7 @@ footer{
     height: 600px;
     overflow: hidden;
     margin-bottom: 20px;
+    background-color: #FFFAFA;
 }
 
 .slides {
@@ -280,335 +245,163 @@ footer {
     background-color: #20a6ff;
 }
 
-@media (max-width: 1515px){
-    h1{
-        margin-left: 20px;
-        font-size: 60px;
-    }
-    section h2{
-        font-size: 30px;
-    }
-    section h3{
-        font-size: 40px;
-        margin-left: 20px;
-    }
+/*inicio responsivo header*/
+@media(max-width: 905px){
     .navImg{
-        margin-top: 20px;
-        margin-right: 20px;
-        padding-right: 5px;
-        cursor: pointer;
+        display: none;
+    }
+    .mobileMenu{
         display: block;
-    }
-    .apresentacao {
-        font-size: 25px;
-        padding: 10px 250px;
-
-    }
-
-    .apresentacao-dois {
-        padding: 10px 250px;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 250px;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 250px;
-    }
-}
-@media (max-width: 1196px){
-    
-    .apresentacao {
-        font-size: 20px;
-        padding: 10px 180px;
-
-    }
-
-    .apresentacao-dois {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 20px;
-
-    }
-
-    .apresentacao-cinco p {
-        font-size: 18px;
-    }
-
-    .img-casa {
-        width: 200px;
-        height: 250px;
-    }
-}
-@media (max-width: 1100px) {
-    h1 {
-        font-size: 35px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-
-    section {
-        border-radius: 5px;
-    }
-
-    .navMobile {
-
-        margin-top: 5px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        cursor: pointer;
-        display: block;
-
-    }
-   .mobileMenu{
-    display: none;
-   }
-
-    .text-section {
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    section h2 {
-        text-align: left;
-        font-size: 30px;
-
-        
-
-    }
-
-    section h3 {
-        font-size: 40px;
-        margin-left: 30px;
-
-    }
-
-    .apresentacao {
-        font-size: 20px;
-        padding: 10px 180px;
-
-    }
-
-    .apresentacao-dois {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 180px;
-    }
-
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 20px;
-
-    }
-
-    .apresentacao-cinco p {
-        font-size: 14px;
-    }
-
-    .img-casa {
-        width: 200px;
-        height: 250px;
-    }
-   
-}
-
-@media (max-width: 700px) {
-    .mobileMenu {
         text-align: center;
-        display: block;
-
+        margin: 10px;
+        font-size: 40px;
     }
-   .navImg{
-    display: none;
-   }
-   h1{
+    h1{
+        text-align: center;
+    }
+}
+/*fim responsivo header*/
+/*responsivo inicio foto cliente*/
+@media(max-width:1530px){
+    .text-section{
+        margin-left: 5px;
+    }
+}
+@media(max-width:1382px){
+  .text-section  h2{
+        font-size: 40px;
+    }
+  .text-section  h3{
+        font-size: 45px;
+        margin-left: 40px;
+    }
+}
+@media(max-width:986px){
+    .text-section  h2{
+        font-size: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  .text-section  h3{
+        font-size: 45px;
+        margin-left: 40px;
+        text-align: center;
+       
+        
+    }
+    section img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+          
+}
+@media(max-width:770px){
+    .text-section{
+        margin-top: 5px;
+    }
+}
+@media(max-width:440px){
+    .text-section{
+        margin-top: 5px;
+    }
+    .text-section  h2{
+        font-size: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        
+    }
+  .text-section  h3{
+        font-size: 45px;
+        margin-left: 40px;
+        text-align: center;
+       
+        
+    }
+    section img{
+        width: 100%;
+    }
+          
+}
+/*responsivo fim foto cliente*/
+/*inicio responsivo apresentação*/
+ @media(max-width:1024px){
+    .apresentacao{
+        font-size: 30px;
+        padding: 20px 40px;
+    }
+}
+@media(max-width:425px){
+    .apresentacao{
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+}
+@media(max-width:375px){
+    .apresentacao{
+        font-size: 25px;
+    }
+}
+
+/*fim responsivo apresentação*/
+/*inicio responsivo imagens da casa*/
+@media(max-width:1530px){
+    .stander-casa img{
+        width: 500px;
+        height: 440px;
+        margin: 0 40px;
+    }
+}
+@media(max-width:1170px){
+    .stander-casa img{
+        width: 400px;
+        height: 440px;
+        margin: 0 40px;
+    }
+}
+@media(max-width:970px){
+    .stander-casa img{
+        width:300px;
+        height: 370px;
+        margin: 0 20px;
+    }
+}
+@media(max-width:680px){
+    .stander-casa{
+     
+     height: 800px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+    }
+    .stander-casa img{
+     display: flex;
+     padding: 15px 0;
+     width: 400px;
+     height: 370px;
+     
+    }
+}
+@media(max-width:434px){
+    .stander-casa img {
+        width: 350px;
+    }
+}
+@media(max-width:340px){
+    .stander-casa img {
+        width: 300px;
+    }
+}
+/*fim responsivo imagens da casa*/
+/*responsivo comentario embaixo do slide*/
+@media(max-width:500px){
+   .link-site{
+    display: flex;
+    flex-direction: column;
     text-align: center;
    }
 }
-
-
-@media (max-width: 1024px){
-    .apresentacao {
-        font-size: 24px;
-        padding: 20px 100px;
-
-    }
-
-    .apresentacao-dois {
-        padding: 20px 100px;
-    }
-
-    .apresentacao-tres {
-        padding: 20px 100px;
-    }
-
-    .apresentacao-quatro {
-        padding: 20px 100px;
-    }
-    .img-casa {
-        width: 300px;
-        height: 350px;
-    }
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 24px;
-
-    }
-    .apresentacao-cinco p {
-        font-size: 27px;
-    }
-}
-@media (max-width: 900px){
-    section img{
-        width: 100%;
-    }
-}
-@media (max-width: 850px){
-    section img{
-        width: 100%;
-    }
-    .apresentacao {
-        font-size: 17px;
-        padding: 10px 80px;
-
-    }
-
-    .apresentacao-dois {
-        padding: 10px 80px;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 80px;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 80px;
-    }
-
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 17px;
-
-    }
-    .apresentacao-cinco{
-        padding: 10px 10px;
-    }
-    .apresentacao-cinco p {
-        font-size: 20px;
-    }
-
-    .img-casa {
-        width: 200px;
-        height: 250px;
-    }
-}
-@media (max-width: 635px) {
-    .apresentacao {
-        font-size: 12px;
-        padding: 10px 70px;
-    }
-    .apresentacao-dois {
-        padding: 10px 70px;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 70px;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 70px;
-    }
-
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 12px;
-    }
-
-    .apresentacao-cinco p {
-        font-size: 13px;
-        padding: 10px 0;
-    }
-    .img-casa{
-        width: 100px;
-        height: 150px;
-    }
-}
-@media (max-width: 425px){
-    section img {
-        width: 100%;
-
-    }
-    .sliders {
-        width: 100%;
-    }
-    .apresentacao {
-    font-size: 12px;
-    padding: 10px 0;
-    }
-    .apresentacao-dois {
-        padding: 10px 0;
-    }
-
-    .apresentacao-tres {
-        padding: 10px 0;
-    }
-
-    .apresentacao-quatro {
-        padding: 10px 0;
-    }
-
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 12px;
-    }
-    .apresentacao-cinco{
-        padding: 10px 0;
-    }
-
-    .apresentacao-cinco p {
-        font-size: 13px;
-    
-    }
-    .img-casa{
-        width: 100px;
-        height: 150px;
-    }
-    footer{
-        font-size: 19px;
-    }
-}
-@media(max-width: 340px){
-    .apresentacao {
-        font-size: 10px;
-        padding: 10px 0;
-        }
-    .apresentacao-dois p,
-    .apresentacao-tres p,
-    .apresentacao-quatro p {
-        font-size: 10px;
-    }
-}
+/*responsivo comentario embaixo do slide*/

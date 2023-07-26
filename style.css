@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-     max-width: 1600px;
+     max-width: 1300px;
     margin: 0 auto; /* Centraliza o conteúdo na tela */    
     background-color: #fff;
 }

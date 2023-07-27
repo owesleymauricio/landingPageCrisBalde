@@ -4,17 +4,17 @@
     font-family: 'Heebo', sans-serif;
     box-sizing: border-box;
 }
-body{
-     max-width: 1300px;
-    margin: 0 auto; /* Centraliza o conteúdo na tela */    
+body{   
     background-color: #fff;
 }
-
+.limiteDeLargura{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
     background-color:#FFFAFA;
-
 }
 
 
@@ -43,39 +43,36 @@ h1 {
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que os elementos quebrem linha quando necessário */
     justify-content: space-between;
     background-image: radial-gradient(#ADD8E6,#00BFFF);
     padding-top: 30px;
     padding-bottom: 10px;
+    border-radius: 5px;
 }
-
-section img {
+section{
+    flex: 1;
+}
+.section-img img {
     width: 400px;
     border-radius: 50%;
-    
+    margin-left: 0;  
+    float: right;
 }
 
 .text-section {
-    margin-left: 150px;
-    margin-top: 100px;
-    
-}
-
-.text-section .dinamico {
-    margin-left: 150px;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+   
 }
 
 section h2 {
-    margin-left: 20px;
     margin-top: 10px;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 section h3 {
-    font-size: 65px;
-    margin-left: 200px;
+    font-size: 45px;
+    margin-left: 20px;
 }
 
 
@@ -96,12 +93,13 @@ section h3 {
     background-image: radial-gradient(#ADD8E6,#00BFFF);
     height: 500px;   
     border-radius: 5px;
+    overflow: hidden;
 }
 .stander-casa img{  
     width: 500px;
-    height: 440px;
-    margin: 0 70px;
-    border-radius: 5px;
+    height: 400px;
+    margin: 0 40px;
+    border-radius: 10px;
 }
 .top-slider{
     font-size: 60px;
@@ -261,69 +259,52 @@ footer {
     }
 }
 /*fim responsivo header*/
-/*responsivo inicio foto cliente*/
-@media(max-width:1530px){
-    .text-section{
-        margin-left: 5px;
-    }
-}
-@media(max-width:1382px){
-  .text-section  h2{
-        font-size: 40px;
-    }
-  .text-section  h3{
-        font-size: 45px;
-        margin-left: 40px;
-    }
-}
+/*responsivo inicio foto cliente e texto */
+
 @media(max-width:986px){
     .text-section  h2{
-        font-size: 40px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 40px;   
     }
   .text-section  h3{
         font-size: 45px;
         margin-left: 40px;
-        text-align: center;
-       
-        
-    }
-    section img{
-        margin-left: auto;
-        margin-right: auto;
-    }
-          
+    }   
 }
 @media(max-width:770px){
-    .text-section{
-        margin-top: 5px;
+    .container {
+        display: flex;
+        flex-direction: column;
     }
+   
+    .section-img {
+        display: flex;
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+    }
+    .section-img img {
+        width: 100%; /* Definir a largura da imagem como 100% do contêiner */
+        max-width: 400px; /* Definir uma largura máxima para a imagem (opcional) */
+    }
+    
 }
+
 @media(max-width:440px){
     .text-section{
         margin-top: 5px;
+        
     }
     .text-section  h2{
-        font-size: 40px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 25px;
         padding: 10px;
-        
     }
   .text-section  h3{
-        font-size: 45px;
-        margin-left: 40px;
-        text-align: center;
-       
-        
+        font-size: 35px;
+        margin-left: 0;    
+        float: left;   
     }
-    section img{
+    .section-img img{
         width: 100%;
     }
-          
 }
 /*responsivo fim foto cliente*/
 /*inicio responsivo apresentação*/
@@ -347,13 +328,7 @@ footer {
 
 /*fim responsivo apresentação*/
 /*inicio responsivo imagens da casa*/
-@media(max-width:1530px){
-    .stander-casa img{
-        width: 500px;
-        height: 440px;
-        margin: 0 40px;
-    }
-}
+
 @media(max-width:1170px){
     .stander-casa img{
         width: 400px;
@@ -405,3 +380,4 @@ footer {
    }
 }
 /*responsivo comentario embaixo do slide*/
+

@@ -318,15 +318,11 @@ footer {
 }
 @media(max-width:425px){
     .apresentacao{
-        font-size: 25px;
+        font-size: 14px;
         padding: 10px 10px;
     }
 }
-@media(max-width:375px){
-    .apresentacao{
-        font-size: 25px;
-    }
-}
+
 
 /*fim responsivo apresentação*/
 /*inicio responsivo imagens da casa*/
